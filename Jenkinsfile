@@ -7,25 +7,25 @@ pipeline {
     stages {
     	stage('Build') {
     		steps {
-				sh "mvn clean package"
-			}
-		}	
+			sh "mvn clean package"
+		}
+	}	
 
-		stage('Post Build Actions') {
-			parallel {
-				stage('Archive artifacts') {
-					steps {
-						archiveArtifacts artifacts: "target/*.?ar", followSymlinks: false
-					}
+	stage('Post Build Actions') {
+		parallel {
+			stage('Archive artifacts') {
+				steps {
+					archiveArtifacts artifacts: "target/*.?ar", followSymlinks: false
 				}
+			}
 
-				stage('Junit') {
-					steps {
-						junit "target/surefire-reports/*.xml"
-					}
+			stage('Junit') {
+				steps {
+					junit "target/surefire-reports/*.xml"
 				}
 			}
 		}
+	}
     }
     post {
     	success {
