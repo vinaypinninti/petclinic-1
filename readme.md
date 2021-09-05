@@ -1,5 +1,6 @@
 # Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=master)](https://travis-ci.org/spring-projects/spring-petclinic/)
 
+
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
@@ -39,7 +40,7 @@ The following items should be installed in your system:
 Note: when m2e is available, there is an m2 icon in Help -> About dialog.
 If m2e is not there, just follow the install process here: http://eclipse.org/m2e/download/
 
-
+### Modified by Maharshi
 ### Steps:
 
 1) In the command line
@@ -212,6 +213,8 @@ Here is a list of them:
 
 
 # Contributing
+
+#####this is a sample line #####
 
 The [issue tracker](https://github.com/spring-projects/spring-petclinic/issues) is the preferred channel for bug reports, features requests and submitting pull requests.
 
